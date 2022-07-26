@@ -16,6 +16,13 @@ import ArticleNewView from '../views/articleview/ArticleNewView'
 // mypageview
 import MypageView from '../views/mypageview/MypageView'
 
+// reserveview
+import ReserveRecommendView from '../views/reserveview/ReserveRecommendView'
+import ReserveDateView from '../views/reserveview/ReserveDateView'
+
+// survey
+import SurveyView from '@/views/survey/SurveyView'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -68,6 +75,23 @@ const routes = [
     path: '/mypages/:userPk',
     name: 'mypage',
     component: MypageView,
+  },
+  
+  // reserveview
+  {
+    path: '/reserve/recommend',
+    name: 'reserveRecommend',
+    component: ReserveRecommendView
+  },
+  {
+    path: '/reserve/date',
+    name: 'reserveDate',
+    component: ReserveDateView
+  },
+  {
+    path: '/survey',
+    name: 'survey',
+    component: SurveyView,
   },
 ]
 
